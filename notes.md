@@ -6,12 +6,13 @@
 ## TODO
 * configuration for sending to mailgun or sendgrid
 * document the methods
-* test install and usage by trying it out on imac
+* test install and usage by trying it out on other computer
 * add to readme:
 ** how to install
 * ensure testability
 * how to handle errors?
-** e.g. 
+** e.g. validation of all fields
+* include email address validation
 
 
 
@@ -29,4 +30,4 @@
 
 ## Notes to include in the readme
 * I would have normally spent more time converting the body to plain text to make the email a bit nicer.
-* 
+* I didn't spend any time styling the front end, since appearance is not what we're going for here.

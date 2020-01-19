@@ -3,18 +3,20 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const app = express();
 
+import SimpleEmailerHelper from './SimpleEmailerHelper';
+
 app.use(express.static(path.join(__dirname, 'build')));
 
-app.use(bodyParser.urlencoded({extended: true}));
-// app.use(bodyParser.json());
+app.use(bodyParser.json());
 
 app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
 app.post('/email', function(req, res) {
-  console.log(req.body);
-  res.redirect('/');
+  let emptyFields = SimpleEmailerHelper.validateData(req.body);
+
+  res.send({'emptyFields': emptyFields});
 });
 
 app.listen(process.env.PORT || 8080, function() {
