@@ -14,9 +14,15 @@ app.get('/', function(req, res) {
 });
 
 app.post('/email', function(req, res) {
-  let emptyFields = SimpleEmailerHelper.validateData(req.body);
-
-  res.send({'emptyFields': emptyFields});
+  let data = req.body;
+  data = SimpleEmailerHelper.convertEmailBody(data);
+  let emptyFields = SimpleEmailerHelper.getEmptyFields(data);
+  let invalidEmails = SimpleEmailerHelper.validateEmails(data);
+  if (emptyFields.length > 0 || invalidEmails.length > 0) {
+    res.status(400).send(JSON.stringify({'emptyFields': emptyFields, 'invalidEmails': invalidEmails}));
+  } else {
+    res.sendStatus(200);
+  }
 });
 
 app.listen(process.env.PORT || 8080, function() {

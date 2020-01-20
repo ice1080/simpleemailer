@@ -6,9 +6,9 @@ export default class EmailForm extends Component {
 
     this.state = {
       to: '',
-      toname: '',
+      to_name: '',
       from: '',
-      fromname: '',
+      from_name: '',
       subject: '',
       body: '',
     };
@@ -36,19 +36,20 @@ export default class EmailForm extends Component {
   render() {
     return (
       <div>
-        Send an email via the configured provider
+        Send an email via the configured provider.
+        All Fields Required!
         <br/>
         <br/>
         To Email Address: <input type={'text'} name={'to'} value={this.state.to} onChange={this.handleTextChange} />
         <br/>
         <br/>
-        To Name: <input type={'text'} name={'toname'} value={this.state.toname} onChange={this.handleTextChange} />
+        To Name: <input type={'text'} name={'to_name'} value={this.state.to_name} onChange={this.handleTextChange} />
         <br/>
         <br/>
         From Email Address: <input type={'text'} name={'from'} value={this.state.from} onChange={this.handleTextChange} />
         <br/>
         <br/>
-        From Name: <input type={'text'} name={'fromname'} value={this.state.fromname} onChange={this.handleTextChange} />
+        From Name: <input type={'text'} name={'from_name'} value={this.state.from_name} onChange={this.handleTextChange} />
         <br/>
         <br/>
         Subject: <input type={'text'} name={'subject'} value={this.state.subject} onChange={this.handleTextChange} />
