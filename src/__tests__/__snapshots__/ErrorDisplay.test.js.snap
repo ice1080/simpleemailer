@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorDisplay default state 1`] = `
+Object {
+  "emptyFields": Array [],
+  "invalidEmails": Array [],
+}
+`;
+
+exports[`ErrorDisplay updateErrors 1`] = `
+Object {
+  "emptyFields": Array [
+    "a",
+    "b",
+  ],
+  "invalidEmails": Array [
+    "c",
+    "d",
+  ],
+}
+`;

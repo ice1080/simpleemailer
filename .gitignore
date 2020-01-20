@@ -3,6 +3,10 @@
 # emacs
 *~
 
+# app secrets
+*ApiKey
+*Domain
+
 # dependencies
 /node_modules
 

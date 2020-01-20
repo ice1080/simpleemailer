@@ -4,15 +4,10 @@
 
 
 ## TODO
-* configuration for sending to mailgun or sendgrid
 * document the methods
 * test install and usage by trying it out on other computer
 * add to readme:
 ** how to install
-
-
-## Later
-* add actual logging
 
 
 
@@ -34,3 +29,8 @@
 * to run the unit tests:
 ** npm i
 ** ./node_modules/.bin/jest
+* I don't often create new projects from scratch. I would have preferred not to use javascript, but also wanted to get it moving quickly and express is the framework I am most familiar with for starting from scratch
+* I would have preferred to add a logger if I had more time.
+
+
+* localhost:3000

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class EmailForm extends Component {
+export default class ErrorDisplay extends Component {
   constructor(props) {
     super(props);
 

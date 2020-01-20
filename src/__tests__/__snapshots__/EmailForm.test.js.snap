@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmailForm clearForm 1`] = `
+Object {
+  "body": "",
+  "from": "",
+  "from_name": "",
+  "subject": "",
+  "to": "",
+  "to_name": "",
+}
+`;
+
+exports[`EmailForm default state 1`] = `
+Object {
+  "body": "",
+  "from": "",
+  "from_name": "",
+  "subject": "",
+  "to": "",
+  "to_name": "",
+}
+`;

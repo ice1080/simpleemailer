@@ -46,6 +46,10 @@ export default class SimpleEmailerHelper {
     return invalidEmails;
   }
 
+  static base64Encode(string) {
+    return Buffer.from(string).toString('base64');
+  }
+
 }
 
 let _emailFieldNames = [

@@ -21,6 +21,10 @@ export default class EmailForm extends Component {
     this.submitForm = this.submitForm.bind(this);
   }
 
+  clearForm() {
+    this.setState({to: '', to_name: '', from: '', from_name: '', subject: '', body: ''});
+  }
+
   handleTextChange(event) {
     var updatedState = {};
     updatedState[event.target.name] = event.target.value;

@@ -75,6 +75,13 @@ describe('SimpleEmailerHelper', () => {
     let data = {to: 'stuff and things', from: 'testing@mrrobot.com'};
     expect(SimpleEmailerHelper.validateEmails(data)).toEqual(['to']);
   });
-  
+
+  test('base64Encode empty', () => {
+    expect(SimpleEmailerHelper.base64Encode('')).toBe('');
+  });
+
+  test('base64Encode string', () => {
+    expect(SimpleEmailerHelper.base64Encode('testing')).toBe('dGVzdGluZw==');
+  });
 });
 
