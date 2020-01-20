@@ -4,23 +4,10 @@
 
 
 ## TODO
-* document the methods
 * test install and usage by trying it out on other computer
 * add to readme:
 ** how to install
-
-
-
-## Design Notes
-* method for validation of incoming data
-* method for conversion of html
-* method to send the email
-** abstract out the configuration part...
-** perhaps a factory class to create a mail-sender
-* method to get auth of email stuff
-* start with simple html frontend
-
-
+** how to include api keys
 
 
 ## Notes to include in the readme
@@ -31,6 +18,7 @@
 ** ./node_modules/.bin/jest
 * I don't often create new projects from scratch. I would have preferred not to use javascript, but also wanted to get it moving quickly and express is the framework I am most familiar with for starting from scratch
 * I would have preferred to add a logger if I had more time.
+* For the internal code, I did not add much documentation. I believe that well named methods and variables help reduce the chance of stale comments. I also recognize this is not always the most accepted position and am willing to change my position if I hear a good argument otherwise.
 
 
 * localhost:3000
